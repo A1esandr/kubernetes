@@ -40,6 +40,7 @@ func main() {
 	// TODO: once we switch everything over to Cobra commands, we can go back to calling
 	// cliflag.InitFlags() (by removing its pflag.Parse() call). For now, we have to set the
 	// normalize func and add the go flag set by hand.
+	// K8s use Cobra?
 	pflag.CommandLine.SetNormalizeFunc(cliflag.WordSepNormalizeFunc)
 	pflag.CommandLine.AddGoFlagSet(goflag.CommandLine)
 	// cliflag.InitFlags()
